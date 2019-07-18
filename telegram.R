@@ -7,12 +7,12 @@ start <- function(bot, update) {
   )
 }
 
-updater <- Updater("969203332:AAGx-D6mTF4pTA0dxmEBQVMUQExQPis6l5o") + CommandHandler("start", start)
+updater <- Updater("token") + CommandHandler("start", start)
 
 updater$start_polling() # Send "/start" to the bot
 
 
-bot <- Bot(token = "969203332:AAGx-D6mTF4pTA0dxmEBQVMUQExQPis6l5o")
+bot <- Bot(token = "token")
 
 updates <- bot$getUpdates()
 
